@@ -2,7 +2,7 @@ name: Update Gubkin Schedule
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # каждый день в 08:00 по Москве
+       - cron: '0 3 * * *'   # каждый день в 06:00 по Москве
   workflow_dispatch:       # кнопка ручного запуска
 
 permissions:
