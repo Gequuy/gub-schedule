@@ -23,6 +23,22 @@ TYPE_TAGS = {
     "Лабораторная работа": "[ЛР]",
 }
 
+def open_site(page):
+    """Заходит на сайт с 3 попытками"""
+    last_err = None
+    for attempt in range(3):
+        try:
+            print(f"📡 Попытка {attempt + 1}: захожу на сайт...")
+            # domcontentloaded = не ждём все картинки/скрипты, только основу страницы
+            page.goto(SITE_URL, timeout=90000, wait_until="domcontentloaded")
+            page.wait_for_timeout(5000)
+            return
+        except Exception as e:
+            last_err = e
+            print(f"⚠️ Попытка {attempt + 1} не удалась: {e}")
+            page.wait_for_timeout(5000)
+    raise last_err
+
 def get_schedule_json():
     print("🔄 Запускаю браузер...")
     with sync_playwright() as p:
@@ -33,9 +49,7 @@ def get_schedule_json():
         )
         page = context.pages[0] if context.pages else context.new_page()
 
-        print("📡 Захожу на сайт расписания...")
-        page.goto(SITE_URL, timeout=60000)
-        page.wait_for_timeout(3000)
+        open_site(page)
 
         pwd = page.locator("input[type='password']")
         if pwd.count() > 0 and pwd.first.is_visible():
@@ -63,9 +77,9 @@ def get_schedule_json():
         print("📥 Перехватываю запрос сайта с расписанием...")
         with page.expect_response(
             lambda r: "act=schedule" in r.url and r.status == 200,
-            timeout=30000
+            timeout=60000
         ) as resp_info:
-            page.reload(wait_until="networkidle")
+            page.reload(wait_until="domcontentloaded")
         data = resp_info.value.json()
         context.close()
         return data
