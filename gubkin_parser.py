@@ -111,7 +111,7 @@ def collect_weeks():
             page.reload(wait_until="domcontentloaded")
         resp = ri.value
         data_current = resp.json()
-        url, headers = resp.url, resp.request.headers()
+        url, headers = resp.url, resp.request.headers
 
         data_next = None
         url2 = next_week_url(url)
