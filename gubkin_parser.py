@@ -146,7 +146,7 @@ def week_to_events(data):
         # Пропускаем консультации (они приходят как тип "Мероприятие" с названием "Консультация")
         name_low = lesson.get("course", {}).get("name", "").lower()
         type_low = lesson.get("type", "").lower()
-        if "консульт" in name_low or "консульт" in type_low:
+        if "консульт" in name_low or "консульт" in type_low or "военн" in name_low:
             continue
         ds = date_by_wd.get(lesson["weekDayNumber"])
         if not ds:
@@ -305,7 +305,8 @@ def main():
 
     # Убираем консультации из истории (включая прошлые)
     for key in list(history):
-        if "консульт" in history[key].get("summary", "").lower():
+        summ = history[key].get("summary", "").lower()
+        if "консульт" in summ or "военн" in summ:
             del history[key]
 
     history.update(all_events)
