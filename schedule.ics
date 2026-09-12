@@ -1,0 +1,173 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Gubkin Schedule//gubkin.ru//
+BEGIN:VEVENT
+SUMMARY:Экономическая культура и финансова
+ я грамотность (Семинар)
+DTSTART;TZID=Europe/Moscow:20260908T154500
+DTEND;TZID=Europe/Moscow:20260908T171500
+DTSTAMP:20260912T204958Z
+UID:546893_20260908@gubkin.ru
+DESCRIPTION:Аудитория: 2406\nПреподаватель: Мелк
+ умова К.К.
+LOCATION:Ауд. 2406
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Базы данных и экспертные системы (Ла
+ бораторная работа)
+DTSTART;TZID=Europe/Moscow:20260908T140000
+DTEND;TZID=Europe/Moscow:20260908T153000
+DTSTAMP:20260912T204958Z
+UID:541163_20260908@gubkin.ru
+DESCRIPTION:Аудитория: 2221\nПреподаватель: Чуко
+ ва Д.И.
+LOCATION:Ауд. 2221
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Математическая статистика (Лекция)
+DTSTART;TZID=Europe/Moscow:20260909T083000
+DTEND;TZID=Europe/Moscow:20260909T100000
+DTSTAMP:20260912T204958Z
+UID:534350_20260909@gubkin.ru
+DESCRIPTION:Аудитория: 725\nПреподаватель: Кома
+ рова Е.В.
+LOCATION:Ауд. 725
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Математическая статистика (Семинар)
+DTSTART;TZID=Europe/Moscow:20260909T101500
+DTEND;TZID=Europe/Moscow:20260909T114500
+DTSTAMP:20260912T204958Z
+UID:534354_20260909@gubkin.ru
+DESCRIPTION:Аудитория: 2405\nПреподаватель: Кома
+ рова Е.В.
+LOCATION:Ауд. 2405
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Иностранный язык (английский) (Семин
+ ар)
+DTSTART;TZID=Europe/Moscow:20260911T140000
+DTEND;TZID=Europe/Moscow:20260911T171500
+DTSTAMP:20260912T204958Z
+UID:541206_20260911@gubkin.ru
+DESCRIPTION:Аудитория: 2468\nПреподаватель: Егор
+ ушкина А.А.
+LOCATION:Ауд. 2468
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Реверсивное программирование (Лабо
+ раторная работа)
+DTSTART;TZID=Europe/Moscow:20260912T083000
+DTEND;TZID=Europe/Moscow:20260912T100000
+DTSTAMP:20260912T204958Z
+UID:554728_20260912@gubkin.ru
+DESCRIPTION:Аудитория: 2328\nПреподаватель: Агаф
+ онов Н.Д.
+LOCATION:Ауд. 2328
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Реверсивное программирование (Лабо
+ раторная работа)
+DTSTART;TZID=Europe/Moscow:20260912T140000
+DTEND;TZID=Europe/Moscow:20260912T153000
+DTSTAMP:20260912T204958Z
+UID:554728_20260912@gubkin.ru
+DESCRIPTION:Аудитория: 2328\nПреподаватель: Агаф
+ онов Н.Д.
+LOCATION:Ауд. 2328
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Реверсивное программирование (Лабо
+ раторная работа)
+DTSTART;TZID=Europe/Moscow:20260912T101500
+DTEND;TZID=Europe/Moscow:20260912T114500
+DTSTAMP:20260912T204958Z
+UID:541159_20260912@gubkin.ru
+DESCRIPTION:Аудитория: 2328\nПреподаватель: Агаф
+ онов Н.Д.
+LOCATION:Ауд. 2328
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Реверсивное программирование (Лабо
+ раторная работа)
+DTSTART;TZID=Europe/Moscow:20260912T154500
+DTEND;TZID=Europe/Moscow:20260912T171500
+DTSTAMP:20260912T204958Z
+UID:541159_20260912@gubkin.ru
+DESCRIPTION:Аудитория: 2328\nПреподаватель: Агаф
+ онов Н.Д.
+LOCATION:Ауд. 2328
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Дискретная математика (Лекция)
+DTSTART;TZID=Europe/Moscow:20260911T120000
+DTEND;TZID=Europe/Moscow:20260911T133000
+DTSTAMP:20260912T204958Z
+UID:534404_20260911@gubkin.ru
+DESCRIPTION:Аудитория: 2213\nПреподаватель: Арут
+ юнов А.В.
+LOCATION:Ауд. 2213
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Дискретная математика (Семинар)
+DTSTART;TZID=Europe/Moscow:20260911T083000
+DTEND;TZID=Europe/Moscow:20260911T100000
+DTSTAMP:20260912T204958Z
+UID:534410_20260911@gubkin.ru
+DESCRIPTION:Аудитория: 2403\nПреподаватель: Арут
+ юнов А.В.
+LOCATION:Ауд. 2403
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Электроника и схемотехника (Лекция)
+DTSTART;TZID=Europe/Moscow:20260911T101500
+DTEND;TZID=Europe/Moscow:20260911T114500
+DTSTAMP:20260912T204958Z
+UID:536513_20260911@gubkin.ru
+DESCRIPTION:Аудитория: 2227\nПреподаватель: Баби
+ чев Ю.Е.
+LOCATION:Ауд. 2227
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Основы саморазвития и социального в
+ заимодействия (Лекция)
+DTSTART;TZID=Europe/Moscow:20260909T120000
+DTEND;TZID=Europe/Moscow:20260909T133000
+DTSTAMP:20260912T204958Z
+UID:536536_20260909@gubkin.ru
+DESCRIPTION:Аудитория: 2227\nПреподаватель: Едне
+ рал И.В.
+LOCATION:Ауд. 2227
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Современные операционные системы (Л
+ абораторная работа)
+DTSTART;TZID=Europe/Moscow:20260908T120000
+DTEND;TZID=Europe/Moscow:20260908T133000
+DTSTAMP:20260912T204958Z
+UID:537511_20260908@gubkin.ru
+DESCRIPTION:Аудитория: 1215\nПреподаватель: преп
+ . не указан
+LOCATION:Ауд. 1215
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Военная подготовка (Семинар)
+DTSTART;TZID=Europe/Moscow:20260910T083000
+DTEND;TZID=Europe/Moscow:20260910T153000
+DTSTAMP:20260912T204958Z
+UID:534349_20260910@gubkin.ru
+DESCRIPTION:Аудитория: 1700\nПреподаватель: преп
+ . не указан
+LOCATION:Ауд. 1700
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Консультация (Мероприятие)
+DTSTART;TZID=Europe/Moscow:20260908T185500
+DTEND;TZID=Europe/Moscow:20260908T202500
+DTSTAMP:20260912T204958Z
+UID:151424_20260908@gubkin.ru
+DESCRIPTION:Аудитория: 2385\nПреподаватель: Небр
+ енчин А.С.
+LOCATION:Ауд. 2385
+END:VEVENT
+END:VCALENDAR
