@@ -143,6 +143,11 @@ def week_to_events(data):
             continue
         if lesson.get("subgroup", 0) not in (0, SUBGROUP):
             continue
+        # Пропускаем консультации (они приходят как тип "Мероприятие" с названием "Консультация")
+        name_low = lesson.get("course", {}).get("name", "").lower()
+        type_low = lesson.get("type", "").lower()
+        if "консульт" in name_low or "консульт" in type_low:
+            continue
         ds = date_by_wd.get(lesson["weekDayNumber"])
         if not ds:
             continue
@@ -297,6 +302,11 @@ def main():
                 datepart = key.split("_")[1].split("@")[0]
                 if datepart in fetched_dates:
                     del history[key]
+
+    # Убираем консультации из истории (включая прошлые)
+    for key in list(history):
+        if "консульт" in history[key].get("summary", "").lower():
+            del history[key]
 
     history.update(all_events)
     save_history(history)
