@@ -22,7 +22,11 @@ jobs:
         run: |
           pip install playwright icalendar pytz
           playwright install --with-deps chromium
-
+          
+      - name: Check site availability
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code} за %{time_total}s\n" --max-time 30 https://lk.gubkin.ru/ || echo "Сайт не ответил"
+          
       - name: Run parser
         env:
           GUBKIN_LOGIN: ${{ secrets.GUBKIN_LOGIN }}
